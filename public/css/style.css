@@ -1,0 +1,31 @@
+
+
+    .fc-day {
+        width: 50px; 
+        height: 30px;
+      }
+
+      #calender{
+           color:white;
+      }
+  
+      
+      #calendar::-webkit-scrollbar {
+        width: 10px;
+      }
+  
+      #calendar::-webkit-scrollbar-thumb {
+        background-color:white ;    
+      }
+
+      .fc-day-today {
+      background-color: rgba(255, 255, 255, 0.164) !important; 
+      }
+
+      
+
+      .bold-label {
+        display: inline-block;
+        width: 70px; 
+        font-weight: bold;
+    }

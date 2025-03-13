@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .full{ }
+
+    
+    
+
+    .btn-md {
+        @apply rounded-full text-white font-bold bg-medium px-5 py-2 text-xl
+      }
+
+    .nav-container {
+        @apply bg-white w-400 h-screen rounded-tr-full;
+        clip-path: polygon(100% 20%, 100% 100%, 0% 100%, 0% 0%);
+    }
+
+   
+
+    .nav-content {
+        @apply w-48 h-14  bg-medium rounded-r-3xl flex justify-center items-center  text-white font-bold;
+    }
+
+    .hover-rotate {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .hover-rotate:hover {
+        transform: rotate(180deg);
+    }
+
+    .transition-rotate {
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+    }
+
+    
+      .bg-medium{
+        @apply bg-slate-800
+      }
+
+    
+      .circle{
+        @apply w-32 h-32 bg-medium absolute top-0 right-0 rounded-full
+      }
+
+      .right-point{
+         clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); 
+         clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+
+
+    .my-shadow{
+        box-shadow: 'rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;'
+    }
+
+    .active{
+        @apply shadow-3xl p-4 rounded-full
+    }
+
+    .my-gradient{
+        background: linear-gradient(180deg, #065E7A 0%, #0D9FB1 47.4%, #4DA8BB 100%); 
+    }
+
+    .blue-gradient{
+       
+        background: linear-gradient(-10deg, #1d2b49 0%, #ffffff 20.4%, #1d2b49 100%); 
+         
+    }
+
+    .hover-primary{
+      @apply hover:bg-transparent hover:border-2 hover:border-primary hover:text-primary transition duration-200 ease-in-out
+    }
+
+    .hover-white{
+        @apply  hover:bg-transparent hover:border-2 hover:border-white hover:text-white transition duration-200 ease-in-out
+    }
+
+    .hover-primary{
+        @apply  hover:bg-transparent hover:border-2 hover:border-primary hover:text-primary transition duration-200 ease-in-out
+    }
+    .hover-blue{
+        @apply  hover:bg-primary hover:border-2  hover:text-white transition duration-200 ease-in-out
+    }
+   
+
+   
+}
+
+@layer utilities {
+    .rounded-30 {
+        border-radius: 30px;
+    }
+}
